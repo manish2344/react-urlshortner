@@ -10,7 +10,7 @@ const ForgotPassword = () => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			const url = `https://reset-password-mern-node.onrender.com/api/password-reset`;
+			const url = `https://url-shortner-l6mu.onrender.com/api/password-reset`;
 			const { data } = await axios.post(url, { email });
 			setMsg(data.message);
 			setError("");

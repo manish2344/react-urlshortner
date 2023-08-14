@@ -20,7 +20,7 @@ const Signup = () => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			const url = "https://reset-password-mern-node.onrender.com/api/users";
+			const url = "https://url-shortner-l6mu.onrender.com/api/users";
 			const { data: res } = await axios.post(url, data);
 			setMsg(res.message);
 		} catch (error) {

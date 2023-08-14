@@ -14,7 +14,7 @@ const Login = () => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			const url = "https://reset-password-mern-node.onrender.com/api/auth";
+			const url = "https://url-shortner-l6mu.onrender.com/api/auth";
 			const { data: res } = await axios.post(url, data);
 			localStorage.setItem("token", res.data);
 			window.location = "/";
